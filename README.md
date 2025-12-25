@@ -1,28 +1,24 @@
+# Food Delivery: Predictor & Classifier
+## What does this project do?
+This project helps food delivery companies understand how long a delivery will take and whether it will be "On-Time" or "Delayed." It uses two different types of AI models to give both a specific time and a simple category.
 
+## Tools Used
+Python: The main coding language.
 
-# Food Delivery Time Prediction & Classification
-## Project Overview
-This project is a comprehensive Data Science pipeline designed to analyze and predict food delivery logistics. It goes beyond simple prediction by implementing both Regression (to estimate delivery time) and Classification (to categorize deliveries as 'Fast' or 'Delayed').
+Pandas & NumPy: For cleaning and organizing the delivery data.
 
-## Tech Stack
-Language: Python
-Librari
-## Engineering Highlights
-Feature Engineering: Extracted Latitude and Longitude coordinates from raw location strings to calculate spatial relationships.
-Data Preprocessing: Handled missing values using mean imputation and performed One-Hot Encoding for categorical variables like Weather and Traffic.
-Standard Scaling: Implemented StandardScaler to normalize numeric features, ensuring optimal model convergence.
-EDA (Exploratory Data Analysis): Generated correlation heatmaps to identify key drivers of delivery delays.
+Seaborn & Matplotlib: To create charts that show patterns in delivery times.
 
-## Model Performance
-1. Linear Regression (Predictive)
-Used to predict the exact Delivery_Time in minutes.
-Metrics: Tracked Mean Squared Error (MSE) and R-squared (R²) scores.
+Scikit-Learn: To build the AI models.
 
-2. Logistic Regression (Diagnostic)
-Used to classify deliveries based on the median delivery time.
-Evaluation: Optimized for Precision, Recall, and F1-Score.
-Visualization: Generated an ROC Curve to measure the true positive rate vs. false positive rate.
+## 🛠️ Technical Highlights
+Map Calculations: I turned location data (Latitude/Longitude) into usable numbers to see how distance affects speed.
 
-## Key Insights
-Traffic Impact: Traffic conditions were the highest predictor of "Delayed" status.
-Logistics Optimization: Identified that vehicle selection based on weather patterns can significantly reduce delivery variance.
+Cleaning Data: I filled in missing info and changed words (like "Rainy" or "Traffic") into numbers that the computer can understand.
+
+Fair Comparison: I used "Scaling" to make sure all numbers (like distance vs. time) were treated equally by the AI.
+
+## How the AI Performed
+The Timer (Regression): Predicts the exact number of minutes a delivery will take.
+
+The Judge (Classification): Decides if a delivery is "Fast" or "Delayed" compared to the average.
