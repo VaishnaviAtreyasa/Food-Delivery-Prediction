@@ -11,7 +11,7 @@ Seaborn & Matplotlib: To create charts that show patterns in delivery times.
 
 Scikit-Learn: To build the AI models.
 
-## 🛠️ Technical Highlights
+##  Technical Highlights
 Map Calculations: I turned location data (Latitude/Longitude) into usable numbers to see how distance affects speed.
 
 Cleaning Data: I filled in missing info and changed words (like "Rainy" or "Traffic") into numbers that the computer can understand.
